@@ -1,0 +1,36 @@
+<div class="card-image">
+                        <img src="javachip.jpg" alt="JavaChip image">
+                    </div>
+                    <div class="card-content">
+                        <img src="veg.svg" alt="veg">
+                        <h5>Java Chip Frappuccino</h5>
+                        <h6>TALL(354 ML),392 kcal</h6>
+                    </div>
+                    <div class="card-footer">
+                        <h4>
+                            ₹ 351 <span class="decimal">.75</span>
+                        </h4>
+
+                        <input class="additem-btn" type="button" value="Add Item">
+                    </div>
+
+
+
+
+
+
+    
+    
+}
+
+.card-image img{
+    width:80px;
+    height:80px;
+    border-radius: 8px;
+    margin:20px;
+}
+
+.card-content{
+    position: absolute;
+    right:10px;
+}

@@ -1,58 +1,246 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard | Tata Starbucks</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Tata Starbucks</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="navbar-left">
-                    <a href="index.html" title="Starbuckslogo">
-                        <img class="logo" src="logo.png" alt="Starbuckslogo">
-                    </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
 
-                    <ul>
-                        <li> <a class="home" href="index.html">Home</a> </li>
-                        <li> <a class="options" href="">Gift</a> </li>
-                        <li> <a class="options" href="">Order</a> </li>
-                        <li> <a class="options" href="">Pay</a> </li>
-                        <li> <a class="options" href="">Store</a> </li>
-                        
+<body>
+    <!--Main container-->
+    <div class="container">
 
-                    </ul>
-                </div>
+        <div class="header">
+            <div class="navbar-left">
+                <a href="index.html" title="Starbuckslogo">
+                    <img class="logo" src="logo.png" alt="Starbuckslogo">
+                </a>
 
-                <div class="navbar-right">
-                    <div class="search-bar">
-                        <img class="search-icon" src="search.svg" alt="searchicon">
-                        <input class="search-text-content" type="text" placeholder="Looking for something specific?">
-                    </div>
+                <ul>
+                    <li> <a class="home" href="index.html">Home</a> </li>
+                    <li> <a class="options" href="">Gift</a> </li>
+                    <li> <a class="options" href="">Order</a> </li>
+                    <li> <a class="options" href="">Pay</a> </li>
+                    <li> <a class="options" href="">Store</a> </li>
 
-                    <a class="profile" href=""><img src="profile_icon.svg" alt="Profile image"></a>
 
-                </div>
-                
+                </ul>
             </div>
 
-            <div class="main-body">
-                <div class="rewards-section">
-                    
+            <div class="navbar-right">
+                <div class="search-bar">
+                    <img class="search-icon" src="search.svg" alt="searchicon">
+                    <input class="search-text-content" type="text" placeholder="Looking for something specific?">
                 </div>
-                
 
-
-            </div>
-
-            <div class="footer">
+                <a class="profile" href=""><img src="profile_icon.svg" alt="Profile image"></a>
 
             </div>
 
         </div>
-    </body>
+
+        <!--Body section excluding header starts here-->
+
+        <!--Green bar //Rewards section-->
+        <div class="rewards-section">
+
+            <p class="reward-left">A world of rewards awaits you! Sign up now.</p>
+
+            <input class="reward-right" type="button" value="Know More">
+
+        </div>
+
+        <!--Handcrafted curations section-->
+        <div class="curation-section">
+            <h2>Handcrafted Curations</h2>
+
+            <div class="curation-image">
+                <div class="cur-img">
+                    <img src="Bestseller.jpg" alt="BestSeller">
+                    <h5 class="cur-tag">Bestseller</h5>
+                </div>
+                <div class="cur-img">
+                    <img src="Drinks.jpg" alt="Drinks">
+                    <h5 class="cur-tag">Drinks</h5>
+
+                </div>
+                <div class="cur-img">
+                    <img src="Food.jpg" alt="Food">
+                    <h5 class="cur-tag">Food</h5>
+
+                </div>
+                <div class="cur-img">
+                    <img src="Merchandise.jpg" alt="Merchandise">
+                    <h5 class="cur-tag">Merchandise</h5>
+
+                </div>
+                <div class="cur-img">
+                    <img src="CoffeeAtHome.jpg" alt="CoffeeAtHome">
+                    <h5 class="cur-tag">Coffee At Home</h5>
+
+                </div>
+                <div class="cur-img">
+                    <img src="ReadyToEat.jpg" alt="ReadyToEat">
+                    <h5 class="cur-tag">Ready To Eat</h5>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--Barista Recommends section-->
+
+        <div class="barista-section">
+            <img class="decor" src="greyleafright.svg" alt="Decorimage">
+
+            <div class="barista-head">
+                <h2>Barista Recommends</h2>
+                <a href="">View Menu</a>
+            </div>
+            <div class="item-card"> <!--this will be given flex in css-->
+
+                <!--card1-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="javachip.jpg" alt="JavaChip image">
+                    </div>
+
+                    <div class="card-content">
+                        <img src="veg.svg" alt="veg">
+                        <h5>Java Chip Frappuccino</h5>
+                        <h6>TALL(354 ML),392 kcal</h6>
+                    </div>
+
+                    <div class="card-footer">
+                        <h4>
+                            ₹ 351<span class="decimal">.75</span>
+                        </h4>
+                        <div class="add-item-btn">
+                            <input type="button" value="Add Item">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--card2-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="cold-coffee.jpg" alt="Coldcoffee image">
+                    </div>
+
+                    <div class="card-content">
+                        <img src="veg.svg" alt="veg">
+                        <h5>Cold coffee</h5>
+                        <h6>TALL(354 ML),354 kcal</h6>
+                    </div>
+
+                    <div class="card-footer">
+                        <h4>
+                            ₹ 351<span class="decimal">.75</span>
+                        </h4>
+                        <div class="add-item-btn">
+                            <input type="button" value="Add Item">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--card3-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="vannilasweet.jpg" alt="Vanilla Sweet image">
+                    </div>
+
+                    <div class="card-content">
+                        <img src="veg.svg" alt="veg">
+                        <h5>Vanilla Sweet Cream Cold Brew</h5>
+                        <h6>TALL(354 ML),63 kcal</h6>
+                    </div>
+
+                    <div class="card-footer">
+                        <h4>
+                            ₹ 383<span class="decimal">.25</span>
+                        </h4>
+                        <div class="add-item-btn">
+                            <input type="button" value="Add Item">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Pride Section-->
+        <div class="pride-section">
+            <div class="green-card">
+
+                <!--Barista image and pride logo on left-->
+                <div class="left">
+                    <img class="img1" src="pridelogo.png" alt="Pride Logo">
+                </div>
+
+                <!--Barista content and price tag details-->
+                <div class="middle">
+                    <div class="pride-content">
+                        <p class="pride-subhead">Introducing</p>
+                        <p class="pride-head">Barista Pride Beverage</p>
+                        <p class="pride-subhead">Experience a brew-tiful barista surprise. Relish this unique
+                            treat,one-of-a-kind curation at a store near you.
+                        </p>
+                    </div>
+                    <div class="price-tag">
+                        <p class="price-text">Starting From</p>
+                        <p class="price">₹ 250<span class="decimal">.00</span></p>
+                    </div>
+                </div>
+
+                <!--Explore now and t&c part-->
+                <div class="right">
+                    <div class="t-and-c">
+                        <p>*T&C Apply</p>
+                    </div>
+
+                    <div class="explore-btn">
+                        <input type="button" value="Explore Now">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Know More Section-->
+        <div class="know-more-section">
+            <div class="know-more-head">
+                <h2>Learn more about the world of coffee!</h2>
+                <a href="">Discover More</a>
+            </div>
+
+            <div class="content-card">
+                <div class="overlay">
+                    
+                </div>
+                <img alt="coffee world" rel="preload" class="card-img" src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Coffee_cherry_spices_9de46c3e1b.jpg" width="100%" height="350">
+
+
+            </div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </div>
+</body>
+
 </html>
