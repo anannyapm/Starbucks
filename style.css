@@ -1,19 +1,18 @@
-html{
-    scrollbar-color: #00754a #f1f1f1;
-    
-}
 
-body{
+html,body{
     font-family: "Open Sans",Helvetica,sans-serif !important;
     margin:0;
+    padding:0;
     width:100%;
     height: 100%;
+    overflow-x: hidden;
+    scrollbar-color: #00754a #f1f1f1;
 }
 
 
 .container{
     width:100%;
-    height: 3000px;
+    height: 100%;
     margin-top: 0;
         
 }
@@ -137,7 +136,7 @@ body{
     background-color: #1e3932;
     height:82px;
     position: relative;
-    top:4%;
+    top:7%;
     
 
 }
@@ -348,6 +347,7 @@ body{
 
 .add-item-btn input:hover{
     background-color:#1e3932;
+    cursor: pointer;
 }
 
 /*Pride Section*/
@@ -360,7 +360,7 @@ body{
     height: 374px;
     display:flex;
     justify-content:center;
-    cursor: pointer;
+    
 
 }
 
@@ -370,6 +370,7 @@ body{
     background-color: #006241;
     border-radius: 8px;
     margin-top: 72px;
+    cursor: pointer;
 }
 
 .left{
@@ -456,6 +457,7 @@ body{
     left: 123px;
     margin: 0;
     margin-top: 115px;
+    cursor: pointer;
 
 }
 
@@ -470,8 +472,14 @@ body{
     
     display:flex;
     justify-content:center;
-    cursor: pointer;
+    
 
+}
+
+.card-img{
+    width:100%;
+    height:350px;
+    
 }
 
 .know-more-head{
@@ -501,7 +509,7 @@ body{
     margin-top: 92px;
     position: relative;
     right:120px; 
-    
+    cursor: pointer;
       
 }
 
@@ -530,4 +538,206 @@ body{
     height:372px;
 }
 
+.text-overlay{
+    position: absolute;
+    inset:0;
+    left:17px;
+    border-radius: 8px;
+    background: linear-gradient(359.89deg,rgba(0,0,0,.74) 19.45%,rgba(0,0,0,.383063) 55.07%,rgba(0,0,0,0) 73.63%) !important;
+}
 
+.top-panel{
+    border:0px;
+    border-radius:4px;
+    background-color: white;
+    color: #096;
+    position: absolute;
+    top:17px;
+    width:80px;
+    height:18px;
+    
+}
+.top-panel p{
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 7px;
+    margin:0
+}
+
+.bottom-panel{
+    color:white;
+    position: absolute;
+    bottom:58px;
+}
+
+.heading{
+    font-size: 28px;
+    font-weight: 700;
+    margin:0;
+    margin-bottom:25px;
+}
+
+.sub{
+    margin:0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom:50px;
+}
+
+.bottom-panel input{
+    margin:0;
+    border:0px;
+    border-radius:16px;
+    background-color: white;
+    color: black;
+    font-size:12px;
+    font-weight:600;
+    width: 200px;
+    height: 32px;
+
+}
+
+/*gap*/
+.gap{
+    background: white;
+    position: relative;
+    top:5%;
+    width: 100%;
+    height:80px;
+}
+
+/*Footer Section*/
+
+.footer{
+    position: relative;
+    top:5%;
+    background-color: #0e382c;
+    color:white;
+    height:480px;
+}
+
+.div-side{
+    float:left;
+    margin-left:110px;
+    margin-top: 55px;
+}
+
+.div-middle-content{
+    margin-left:194px;
+}
+.div-middle-content ul{
+    float:left;
+    margin-top:55px;
+    margin-left:95px;
+}
+.div-middle-content li{
+    padding-bottom:28px;
+    display:flex;
+    font-weight: 400;
+    font-size: 13.5px;
+    letter-spacing: -0.1px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.div-middle-content li:not(.div-title):hover {
+    color:#bbb;
+}
+.div-title{
+    padding-bottom:18px !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+.div-social-media{
+    float:left;
+    margin-left:90px;
+    margin-top: 55px;
+    cursor: pointer;
+    
+}
+.sm-title{
+    margin:0;
+    font-size: 18px;
+}
+
+.div-social-media img{
+    margin-right: 11px;
+    margin-top:15px;
+}
+
+a{
+    text-decoration: none;
+}
+.div-download{
+    float:left;
+    margin-left:85px;
+    margin-top: 55px;
+}
+.div-download a{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-line{
+    height:0.6px;
+    width:1296px;
+    background-color: #bbb;
+    position: absolute;
+    bottom: 90px;
+    left:119px;
+}
+
+.footer-bottom-links ul{
+    padding:0;
+    margin:0;
+
+}
+
+
+.footer-bottom-links li{
+    display:inline-block;
+    border-right: 1px solid #b3b3b3;
+    padding-right: 17px;
+    margin: 0;
+    padding-left:17px;
+    margin-top:20px;
+
+    
+}
+
+.links-first{
+    padding-left:1px !important;
+    
+}
+
+.links-last{
+    border:0 !important;
+}
+.links{
+    text-decoration: none;
+    color:white;
+    font-size: 11px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.links:hover{
+    color:#bbb;
+}
+
+.copyright a{
+    text-decoration: none;
+    color:white;
+    font-size: 10px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.copyright{
+    position: absolute;
+    right:0;
+    top:0;
+    
+}
+.copyright a:hover{
+    color:#bbb;
+}
